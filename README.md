@@ -21,8 +21,8 @@ Ensure you have Python 3.9+ installed on your machine.
 Clone this repository and navigate to the project root directory:
 
 ```bash
-git clone https://github.com/your-username/cv-analyzer-ai.git
-cd cv-analyzer-ai
+git clone https://github.com/awaisjanicode/cv-analyzer.git
+cd cv-analyzer
 ```
 
 Install the required Python packages:
@@ -39,7 +39,7 @@ Create a `.env` file in the root directory and add your Google Gemini API Key:
 GOOGLE_API_KEY="your-gemini-api-key-here"
 ```
 
-> **Note:** The application features a built-in Mock Mode (`MOCK_MODE=True` in `config.py`) that falls back to a fast, locally run offline NLP NLP system if you do not provide a valid API key!
+> **Note:** The application features a built-in Mock Mode (`MOCK_MODE=True` in `config.py`) that falls back to a fast, locally run offline NLP system if you do not provide a valid API key!
 
 ### 4. Running the App
 
@@ -76,4 +76,9 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+No license file is currently included in this repository.
+
+
+## API key safety
+
+Copy `.env.example` to a local `.env` file and set `GOOGLE_API_KEY` there. The `.gitignore` excludes `.env`; never commit API keys. If a key was previously committed, revoke it and create a replacement because deleting the file from the current branch does not erase Git history.
